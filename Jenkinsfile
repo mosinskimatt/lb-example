@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'
-        DOCKER_IMAGE = 'cithit/mosinsmj/metallb-deploy'
+        DOCKER_IMAGE = 'cithit/mosinsmj-lb-deploy'
         // Use Jenkins build number as part of the image tag
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/mosinskimatt/mosinsmj-lb.git'
