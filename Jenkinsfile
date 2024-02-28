@@ -3,12 +3,12 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'
-        DOCKER_IMAGE = 'cithit/roseaw-metal'
+        DOCKER_IMAGE = 'mosinskimatt/mosinsmj-lb-deploy'
         // Use Jenkins build number as part of the image tag
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/miamioh-roseaw/metal.git'
         
-        KUBECONFIG = credentials('roseaw-225')
+        KUBECONFIG = credentials('mosinsmj-225')
     }
 
     stages {
